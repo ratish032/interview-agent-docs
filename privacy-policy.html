@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy - Interview Agent</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', sans-serif; background: #f5f7fa; color: #333; }
+    .header { background: linear-gradient(135deg, #2d8cff, #6c63ff); color: white; padding: 40px 20px; text-align: center; }
+    .header h1 { font-size: 1.8rem; }
+    .content { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+    .card { background: white; border-radius: 12px; padding: 30px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    h2 { font-size: 1.2rem; margin: 24px 0 10px; color: #2d8cff; }
+    h2:first-child { margin-top: 0; }
+    p { line-height: 1.8; color: #555; margin-bottom: 10px; }
+    ul { padding-left: 20px; margin-bottom: 10px; }
+    li { line-height: 1.8; color: #555; }
+    footer { text-align: center; padding: 30px; color: #999; font-size: 0.85rem; }
+    a { color: #2d8cff; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Privacy Policy</h1>
+  </div>
+  <div class="content">
+    <div class="card">
+      <p><strong>Last Updated:</strong> June 11, 2026</p>
+
+      <h2>Introduction</h2>
+      <p>Interview Agent ("we", "our", "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and safeguard your information when you use our Zoom Calendar Sync application ("the App"). This application is developed and maintained by Fusemachines.</p>
+
+      <h2>Information We Collect</h2>
+      <p>When you authorize the App, we collect the following data through Zoom and Google OAuth 2.0:</p>
+      <ul>
+        <li>Your Zoom meeting information (meeting ID, title, time, duration, participants)</li>
+        <li>Your Google Calendar event data (event ID, title, time, duration)</li>
+        <li>OAuth tokens (access tokens and refresh tokens) for authenticating API requests on your behalf</li>
+      </ul>
+
+      <h2>How We Use Your Information</h2>
+      <p>We use the collected information solely to:</p>
+      <ul>
+        <li>Synchronize your Zoom meetings with your Google Calendar</li>
+        <li>Create, update, and delete calendar events based on your Zoom meeting changes</li>
+        <li>Maintain your authenticated session for continuous sync</li>
+      </ul>
+
+      <h2>Data Storage and Security</h2>
+      <p>OAuth tokens are stored in an encrypted PostgreSQL database. Access to the database is restricted, and tokens are never logged or exposed in plaintext. Meeting data is processed in real time and is not permanently stored beyond what is necessary for synchronization.</p>
+
+      <h2>Data Sharing</h2>
+      <p>We do not sell, trade, or share your personal information with third parties. Your data is only transmitted between the App, Zoom API, and Google Calendar API for the purpose of synchronization.</p>
+
+      <h2>Your Data Subject Rights</h2>
+      <p>You have the right to:</p>
+      <ul>
+        <li><strong>Access:</strong> Request a copy of the data we hold about you</li>
+        <li><strong>Rectification:</strong> Request correction of inaccurate data</li>
+        <li><strong>Erasure:</strong> Request deletion of your data ("right to be forgotten")</li>
+        <li><strong>Portability:</strong> Request your data in a portable format</li>
+        <li><strong>Restrict Processing:</strong> Request that we limit how we use your data</li>
+        <li><strong>Object:</strong> Object to our processing of your data</li>
+        <li><strong>Withdraw Consent:</strong> Revoke your authorization at any time by removing the app from your Zoom account</li>
+      </ul>
+      <p>To exercise any of these rights, please contact us at the email address below.</p>
+
+      <h2>Data Retention</h2>
+      <p>We retain your OAuth tokens only as long as you have the App authorized. When you revoke access or uninstall the App, all associated tokens and data are deleted from our systems.</p>
+
+      <h2>Revoking Access</h2>
+      <p>You can revoke the App's access at any time by:</p>
+      <ul>
+        <li>Visiting <a href="https://marketplace.zoom.us">Zoom App Marketplace</a> and removing the app</li>
+        <li>Visiting your Google Account permissions and revoking access</li>
+      </ul>
+
+      <h2>Contact Us</h2>
+      <p>If you have any questions about this Privacy Policy or wish to exercise your data rights, please contact us at:</p>
+      <p><strong>Email:</strong> ratish@fusemachines.com</p>
+      <p><strong>Company:</strong> Fusemachines</p>
+    </div>
+  </div>
+  <footer>&copy; 2026 Fusemachines. All rights reserved.</footer>
+</body>
+</html>

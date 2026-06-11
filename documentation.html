@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Documentation - Interview Agent</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', sans-serif; background: #f5f7fa; color: #333; }
+    .header { background: linear-gradient(135deg, #2d8cff, #6c63ff); color: white; padding: 40px 20px; text-align: center; }
+    .header h1 { font-size: 1.8rem; }
+    .content { max-width: 800px; margin: 40px auto; padding: 0 20px; }
+    .card { background: white; border-radius: 12px; padding: 30px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); margin-bottom: 20px; }
+    h2 { font-size: 1.2rem; margin: 20px 0 10px; color: #2d8cff; }
+    h2:first-child { margin-top: 0; }
+    h3 { font-size: 1.05rem; margin: 16px 0 8px; color: #444; }
+    p { line-height: 1.8; color: #555; margin-bottom: 10px; }
+    ol, ul { padding-left: 20px; margin-bottom: 10px; }
+    li { line-height: 1.8; color: #555; }
+    code { background: #f0f0f0; padding: 2px 6px; border-radius: 4px; font-size: 0.9rem; }
+    footer { text-align: center; padding: 30px; color: #999; font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>Documentation</h1>
+  </div>
+  <div class="content">
+    <div class="card">
+      <h2>Getting Started</h2>
+      <p>Interview Agent syncs your Zoom meetings with Google Calendar. Follow these steps to get started:</p>
+      <ol>
+        <li>Install the app from Zoom App Marketplace</li>
+        <li>Authorize the app to access your Zoom account</li>
+        <li>Connect your Google Calendar account</li>
+        <li>Your meetings will automatically sync between Zoom and Google Calendar</li>
+      </ol>
+    </div>
+
+    <div class="card">
+      <h2>How It Works</h2>
+
+      <h3>Meeting Sync</h3>
+      <p>When a meeting is created, updated, or deleted in Zoom, the app automatically reflects those changes in your Google Calendar. Sync happens in real time via Zoom webhooks.</p>
+
+      <h3>Supported Events</h3>
+      <ul>
+        <li><strong>Meeting Created:</strong> A new Google Calendar event is created with Zoom meeting details</li>
+        <li><strong>Meeting Updated:</strong> The corresponding calendar event is updated to reflect changes</li>
+        <li><strong>Meeting Deleted:</strong> The calendar event is automatically removed</li>
+      </ul>
+
+      <h3>Authentication</h3>
+      <p>The app uses OAuth 2.0 for both Zoom and Google Calendar. Your access tokens are securely stored and automatically refreshed so you stay connected without re-authenticating.</p>
+    </div>
+
+    <div class="card">
+      <h2>Removing the App</h2>
+      <ol>
+        <li>Go to <a href="https://marketplace.zoom.us">Zoom App Marketplace</a></li>
+        <li>Click <strong>Manage</strong> > <strong>Installed Apps</strong></li>
+        <li>Find "Interview Agent" and click <strong>Uninstall</strong></li>
+        <li>Optionally, revoke Google Calendar access from your Google Account settings</li>
+      </ol>
+      <p>All your data and tokens will be removed from our systems upon uninstallation.</p>
+    </div>
+
+    <div class="card">
+      <h2>Need Help?</h2>
+      <p>Visit our <a href="support.html">Support page</a> or contact us at <strong>ratish@fusemachines.com</strong>.</p>
+    </div>
+  </div>
+  <footer>&copy; 2026 Fusemachines. All rights reserved.</footer>
+</body>
+</html>
